@@ -2,7 +2,7 @@
     use YooKassa\Client;
 
     $client = new Client();
-    $client->setAuth('977159', 'live_iCMPFAkv_yd24iYQl5m9vHmU7SkgOP0gLUWmdomU2QI');
+    $client->setAuth('977159', 'XXXXXXXXXXXXXXX');
     $payment = $client->createPayment(
         array(
             'amount' => array(

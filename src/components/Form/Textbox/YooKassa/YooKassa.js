@@ -1,14 +1,10 @@
 import axios from 'axios';
-import { useDispatch, useSelector } from 'react-redux';
-import regeneratorRuntime from "regenerator-runtime";
+import { useSelector } from 'react-redux';
 import { createMessage } from '/src/utils/createMessage';
 import classes from './YooKassa.module.css';
-import { useState } from 'react';
-import { useEffect } from 'react';
 import { getBuyInfo } from '/src/utils/getBuyInfo';
 
 export const YooKassa = () => {
-  const dispatch = useDispatch();
   const contacts = useSelector((store) => store?.logoBreef?.contacts);
   const count = useSelector((store) => store?.logoBreef?.count);
 
@@ -19,7 +15,7 @@ export const YooKassa = () => {
 	const store = useSelector(store => store?.logoBreef);
 
 	const sendPhotos = (file) => {
-		const token ="5821946442:AAG5R-UNDP1E910tEleFVKHTO-RI2Rl6OeQ";
+		const token ="XXXXXXXXXXXXX";
 		const urlSendPhoto = `https://api.telegram.org/bot${token}/sendPhoto`;
 		const chatId = "-1001722127371";
 
@@ -63,33 +59,6 @@ export const YooKassa = () => {
 	const handleBuy = (e) => {
     e.preventDefault();
     telegramRequest();
-
-		// const token ="5821946442:AAG5R-UNDP1E910tEleFVKHTO-RI2Rl6OeQ";
-		// const chatId = "-1001722127371";
-		// const urlSendMessage = `https://api.telegram.org/bot${token}/sendMessage`;
-
-		// const message = createMessage(store);
-
-    // axios.post(urlSendMessage, {
-		// 	chat_id: chatId,
-		// 	parse_mode: 'html',
-		// 	text: message,
-		// }).then(() => {
-		// 	const filesArray = new Array(...store?.files);
-      
-		// 	filesArray.map((file) => sendPhotos(file));
-    //   // setTimeout(() => {}, 1000);
-		// });
-
-    // console.log('res  -  ', res);
-    // .then(() => {
-    //   const form = document?.getElementById('formSubmitId');
-
-    //   form.action = "https://yookassa.ru/integration/simplepay/payment";
-    //   form.method = "POST";
-    //   form.submit();
-    // }
-    // );
   }
 
   return (
@@ -99,10 +68,7 @@ export const YooKassa = () => {
         href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css"
       />
       <form
-      id="formSubmitId"
-        // action="https://yookassa.ru/integration/simplepay/payment"
-        // onSubmit={() => handleBuy()}
-        // method="post"
+        id="formSubmitId"
         acceptCharset="utf-8"
       >
       <div>
@@ -114,9 +80,6 @@ export const YooKassa = () => {
             onChange={() => {}}
             value={`{ "customer":{ "email": "${contacts.email}" }, "items":[{ "text": "${description}", "quantity": "1", "price":{ "amount": "${amount}" }, "paymentSubjectType": "commodity", "paymentMethodType": "full_prepayment", "tax": "1" }] }`}
           />
-          {/* <input name="cps_email" id="emailCustomer" defaultValue={email === '' ? contacts.email : email} placeholder="Почта" />
-          <input name="cps_phone" id="phoneCustomer" defaultValue={phone === '' ? contacts.phone : phone} placeholder="Телефон" /> */}
-          
         </div>
 
           <textarea
@@ -142,7 +105,6 @@ export const YooKassa = () => {
           <button
             data-text="Заплатить"
             disabled={disabled}
-            // class="ym-btn-pay ym-result-price"
             className={disabled ? classes.blocked : classes.block}
             onClick={(e) => handleBuy(e)}
           >
