@@ -1,0 +1,22 @@
+.container {
+	height: 100%;
+	width: 100%;
+	/* display: flex; */
+	/* justify-content: center;
+	align-items: center; */
+}
+
+.textBlock {
+	margin-top: 30px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	
+	color: #1C1C1C;
+}
+
+.text {
+	margin-bottom: 30px;
+}

@@ -1,0 +1,39 @@
+.container {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.input {
+	margin-bottom: 27px;
+	width: 100%;
+	border: none;
+	border-bottom: 2px #C0C0C0 solid;
+
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 38px;
+	letter-spacing: 0.03em;
+	background: rgba(255, 255, 255, 0);
+}
+
+.inputNumbers {
+	margin-bottom: 27px;
+	width: 100%;
+	border: none;
+	border-bottom: 2px #C0C0C0 solid;
+
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 38px;
+	letter-spacing: 0.03em;
+	background: rgba(255, 255, 255, 0);
+}
+
+.inputNumbers:focus {
+	outline: none;
+}
+
+.input:focus {
+	outline: none;
+}

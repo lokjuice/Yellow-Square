@@ -1,0 +1,102 @@
+.container {
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerAdaptive {
+	width: 90vw;
+	max-width: 800px;
+}
+
+.h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 99.9%;
+	/* or 64px */
+	
+	text-align: center;
+	letter-spacing: 0.01em;
+	
+	color: #1C1C1C;
+	margin-bottom: 19px;
+}
+
+.h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 99.9%;
+	/* or 36px */
+	
+	text-align: center;
+	letter-spacing: 0.01em;
+	
+	color: #1C1C1C;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ 
+	margin-top: 70px;
+	gap: 33px;
+}
+
+.blocked:hover {
+	cursor: default;
+}
+.blocked {
+	/* display: inline;
+	justify-content: center;
+	align-items: center; */
+	border: none;
+	width: 60px;
+	height: 60px;
+	background-color: #FFE400;
+
+	opacity: .5;
+}
+
+.button {
+	/* display: inline;
+	justify-content: center;
+	align-items: center; */
+	border: none;
+	width: 60px;
+	height: 60px;
+	background-color: #FFE400;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: #ffe600bd;
+}
+
+.title {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.formContainer {
+	margin-top: 65px;
+	/* height: 430px; */
+	/* display: flex;
+	justify-content: center; */
+}
+
+.dynamicModule {
+	/* width: 800px; */
+}
