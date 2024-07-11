@@ -1,0 +1,101 @@
+.container {
+	background-color: white;
+	background-image: url('./pics/bgimage2.png');
+	background-position: 10px 2015px;
+	background-repeat: no-repeat;
+	width: 100vw;
+}
+
+
+
+.headerText {
+		/* padding: 80px 200px 0 200px; */
+		padding: 5vw 10vw;
+}
+
+.content {
+
+	background-image: url('./pics/bgimage1.png');
+	background-position: 0 630px;
+	background-repeat: no-repeat;
+}
+
+.h {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 7vh;
+	line-height: 99.9%;
+
+	text-align: center;
+	letter-spacing: 0.01em;
+
+	color: #1C1C1C;
+	margin-top: 5vw;
+}
+
+.p {
+		padding-top: 2vw;
+	font-weight: 500;
+	font-size: 3vh;
+	line-height: 145.4%;
+
+	text-align: center;
+	letter-spacing: 0.07em;
+
+	color: #1C1C1C;
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3vw;
+}
+
+.image {
+	width: 90vw;
+	max-width: 600px;
+}
+
+.imageLogos {
+	width: 85vw;
+	margin-top: 1vw;
+}
+
+.imglogos {
+	margin-top: 5vw;
+	display: flex;
+	justify-content: center;
+}
+
+.behance {
+	display: flex;
+	justify-content: center;
+
+	padding-top: 5vw;
+
+	color: #1C1C1C;
+}
+
+.abehance {
+	font-weight: 600;
+	font-size: 3vh;
+	line-height: 99.9%;
+	/* or 36px */
+
+	text-align: center;
+	letter-spacing: 0.01em;
+}
+
+.abehance:link {
+	color: #1C1C1C;
+}
+
+.abehance:visited {
+	color: #1C1C1C;
+}
+
+.abehance:hover {
+	color: #C0C0C0;
+}
