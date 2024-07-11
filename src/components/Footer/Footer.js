@@ -28,7 +28,7 @@ export const Footer = () => {
 									<a className={classes.abehance} download="" href='/polsogl.docx'>Пользовательское соглашение</a> <br />
 								</div>
 								<div>
-									<a className={classes.abehance} download="" href='/soglobr.docx'>Согласие на обработку <br />персональных данных</a>
+									<a className={classes.abehance} download="" href='/media/soglobr.docx'>Согласие на обработку <br />персональных данных</a>
 								</div>
 							</div>
 						</div>
